@@ -135,6 +135,7 @@ ul, ol {
         transition: background .5s ease-in-out, padding .5s ease-in-out;
     }
     .navbar-custom.top-nav-collapse {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         padding: 15px 0;
         background: #000;
     }
