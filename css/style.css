@@ -6,6 +6,7 @@ body, html {
     width: 100% !important;
     height: 100% !important;
 }
+
 h1 {
     font-weight: 700;
 }
@@ -81,9 +82,7 @@ ul, ol {
     margin-top:-10px;
     height: 40px;
 }
-.navbar-custom .navbar-brand {
 
-}
 .navbar-custom .navbar-brand:focus {
     outline: 0;
 }
@@ -140,7 +139,7 @@ ul, ol {
         background: #000;
     }
 }
-.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+
 /* Home Style */
 .intro {
     display: table;
@@ -565,54 +564,20 @@ ol.type li a:hover {
     padding: 5px;
     color: #17A3A8;
 }
+
+
 /* Location Section */
 #location {
     padding: 80px 0;
-    background: #000; /* Old browsers */
-    background: -moz-linear-gradient(top, #000 0%, #000 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000), color-stop(100%, #000)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #000 0%, #000 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #000 0%, #000 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #000 0%, #000 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #000 0%, #000 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#000', GradientType=0 ); /* IE6-9 */
-}
-img.img-circle.team-img {
-    width: 120px;
-    height: 120px;
-    border: 4px solid transparent;
-    transition: all 0.5s;
-}
-#location .thumbnail:hover>img.img-circle.team-img {
-    border: 4px solid #17A3A8;
-    font-size: medium;
-}
-#location .thumbnail {
-    background: transparent;
-    border: 0;
-}
-#location .thumbnail .caption {
-    padding: 9px;
-    color: #fff;
+    background:  #222222; /* Old browsers */
 }
 
 /* Contact Section */
 #contact {
     padding: 80px 0;
-    background: #000; /* Old browsers */
-    background: -moz-linear-gradient(top, #000 0%, #000 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000), color-stop(100%, #000)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #000 0%, #000 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #000 0%, #000 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #000 0%, #000 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #000 0%, #000 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#000', GradientType=0 ); /* IE6-9 */
+    background: #222222;
 }
-#contact h3 {
-    font-size: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
+
 #contact form {
     padding: 30px 0;
 }
