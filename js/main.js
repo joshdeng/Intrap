@@ -15,7 +15,7 @@ function main() {
 
         // Testimonial Slider
         $('a.page-scroll').click(function () {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
                 var target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
@@ -30,20 +30,25 @@ function main() {
         /*====================================
          Show Menu on Book
          ======================================*/
-        $(window).bind('scroll', function () {
-            var navHeight = $(window).height() - 100;
-            if ($(window).scrollTop() > navHeight) {
-                $('.navbar-default').addClass('on');
-            } else {
-                $('.navbar-default').removeClass('on');
-            }
-        });
+//        $(window).bind('scroll', function () {
+//            var navHeight = $(window).height() - 100;
+//            if ($(window).scrollTop() > navHeight) {
+//                $('.navbar-fixed-top').addClass('on');
+//            } else {
+//                $('.navbar-fixed-top').removeClass('on');
+//            }
+//        });
 
         $('body').scrollspy({
-            target: '.navbar-default',
+            target: '.navbar-fixed-top',
             offset: 80
-        })
-
+        });
+        
+        // Closes the Responsive Menu on Menu Item Click
+        $('.navbar-collapse ul li a').click(function() {
+            $('.navbar-toggle:visible').click();
+        });
+        
         $(document).ready(function () {
             $("#testimonial").owlCarousel({
                 navigation: false, // Show next and prev buttons

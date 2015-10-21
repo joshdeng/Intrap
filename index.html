@@ -39,9 +39,9 @@
             <![endif]-->
     </head>
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<!--        <div id="booknow-tab">
-            <h4>Book Now</h4>
-        </div>-->
+        <!--        <div id="booknow-tab">
+                    <h4>Book Now</h4>
+                </div>-->
         <!-- Navigation -->
         <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse" role="navigation">
             <div class="container-fluid">
@@ -68,13 +68,19 @@
                             <a class="page-scroll" href="#rooms">Rooms</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#faq">FAQ</a>
-                        </li>                    
+                            <a class="page-scroll" href="#faq">F.A.Q</a>
+                        </li>                 
                         <li>
-                            <a class="page-scroll" href="#location">Location</a>
+                            <a class="page-scroll collapse-nav" href="#location-contact">Location</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#contact">Contact</a>
+                            <a class="page-scroll collapse-nav" href="#contact">Contact</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll full-nav" href="#location-contact">Location</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll full-nav" href="#location-contact">Contact</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="#career">Career</a>
@@ -114,7 +120,7 @@
                     <hr>
                 </div>
                 <div class="row">
-                    <div class="col-md-6"> <img src="img/about.png" class="img-responsive"> </div>
+                    <div class="col-md-6"> <img src="img/about.png" alt="about" class="img-responsive"> </div>
                     <div class="col-md-6">
                         <div class="about-text"> <i class="fa fa-users"></i>
                             <div class="padding-left"><h4>Who We Are</h4>
@@ -143,7 +149,7 @@
                     <hr>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
                 </div>
-                <div id="row">
+                <div class="row">
                     <div class="col-md-3 col-sm-6">
                         <div class="thumbnail"> <img src="img/team/01.jpg" alt="..." class="img-circle team-img">
                             <div class="caption">
@@ -187,113 +193,149 @@
         <div id="faq">
             <div class="container"> <!-- Container -->
                 <div class="section-title text-center center">
-                    <h2>Our <strong>Works</strong></h2>
+                    <h2><strong>F.A.Q</strong></h2>
                     <hr>
                     <div class="clearfix"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
-                </div>
-                <div class="categories">
-                    <ul class="cat">
-                        <li>
-                            <ol class="type">
-                                <li><a href="#" data-filter="*" class="active">All</a></li>
-                                <li><a href="#" data-filter=".web">Web Design</a></li>
-                                <li><a href="#" data-filter=".app">App Development</a></li>
-                                <li><a href="#" data-filter=".branding">Branding</a></li>
-                            </ol>
-                        </li>
-                    </ul>
-                    <div class="clearfix"></div>
+                    <p>Want to learn more about Breakout?<br/>
+                        Have some questions about gameplay?<br/>
+                        Our FAQ will answer most of your question about Breakout or call us.</p>
                 </div>
                 <div class="row">
-                    <div class="portfolio-items">
-                        <div class="col-sm-6 col-md-3 col-lg-3 web">
-                            <div class="portfolio-item">
-                                <div class="hover-bg"> <a href="img/portfolio/01.jpg" title="Project description" rel="prettyPhoto">
-                                        <div class="hover-text">
-                                            <h4>Project Title</h4>
-                                            <small>Web Design</small>
-                                            <div class="clearfix"></div>
-                                            <i class="fa fa-search"></i> </div>
-                                        <img src="img/portfolio/01.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="section-title text-center center">
+                            <h2><strong>GENERAL  QUESTIONS</strong></h2>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="panel-group" id="accordion-general">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-general" href="#collapseGeneralFour">
+                                            I have a question or need help to perform an anlaysis. Can I contact you to get any help?        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseGeneralFour" class="panel-collapse collapse ">
+                                    <div class="panel-body">
+                                        Yes, we are reachable by email. For general questions about OMA, our preferred way of answering questions is through BioStar. Please consider asking your question there, including the tag OMA. We monitor BioStar for such questions and will answer them directly on that platform.       </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-general" href="#collapseGeneralFive">
+                                            Why is my favorite genome not present in OMA?        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseGeneralFive" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        We strive to include as many complete genomes as possible, provided they are released publicly and meet reasonable quality standards. We are open for suggestions and are willing to adapt our priority queue based on user requests. If you want to analyze your "own" genomes, you can use the <a href="/standalone">OMA standalone pipeline</a> to do so and even make use of already analyzed genomes using the export function. OMA standalone is licenced under the Mozilla Public License Version 2.0. In a nutshell, OMA standalone is open source and free for commercial and non-commercial use.       </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-general" href="#collapseGeneralSix">
+                                            What is the difference between OMA Groups and Hierarchical Groups?        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseGeneralSix" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        OMA Groups are sets of genes which are all orthologous to each other according to the definition of Fitch (1970). In presence of a duplication in certain gene familly, this grouping strategy will pick only one of the two lineages resulting from the duplication event. The hierarchical orthologous groups (HOGs) are defined as sets of genes that have descended from a single common ancestor within a taxonomic range of interest, i.e. they correspond to the member of a clade in a gene tree rooted at the speciation node of interest.
+                                        Which type of groups you should choose depends highly on the type of your analysis.      </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-general" href="#collapseGeneralSeven">
+                                            Why are OMA Groups often relatively small? Covering so many genomes, I expected them to be much bigger.         </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseGeneralSeven" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        For the OMA Groups, we apply a very stringent grouping strategy. All the members of a group need to be bona fide orthologs to each other, i.e. the form a clique in graph-theoretic terms. This grouping strategy is mainly intended for applications which require orthologs of high confidence, e.g. for reconstructing species trees. A gene tree built from the members of an OMA Group should - in absence of LGT are incomplete lineage sorting - be congruent with the underlying species tree. If you are interested in larger groups, consider using the OMA HOGs. These hierarchical orthologous groups are defined as set of genes that all started diverging from a single ancestral gene at a given time point of reference.      </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-general" href="#collapseGeneralEight">
+                                            Under what licence is OMA distributed </a>      </h4>
+                                </div>
+                                <div id="collapseGeneralEight" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        The OMA Browser is available under the Creative Commons Attribution-Share Alike 2.5 License, and the OMA standalone package under the MPL 2.0 (open source) licence.</div>    </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 app">
-                            <div class="portfolio-item">
-                                <div class="hover-bg"> <a href="img/portfolio/02.jpg" title="Project description" rel="prettyPhoto">
-                                        <div class="hover-text">
-                                            <h4>Project Title</h4>
-                                            <small>App Development</small>
-                                            <div class="clearfix"></div>
-                                            <i class="fa fa-search"></i> </div>
-                                        <img src="img/portfolio/02.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                            </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="section-title text-center center">
+                            <h2><strong>BOOKING INQUIRIES</strong></h2>
+                            <div class="clearfix"></div>
                         </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 web">
-                            <div class="portfolio-item">
-                                <div class="hover-bg"> <a href="img/portfolio/03.jpg" title="Project description" rel="prettyPhoto">
-                                        <div class="hover-text">
-                                            <h4>Project Title</h4>
-                                            <small>Web Design</small>
-                                            <div class="clearfix"></div>
-                                            <i class="fa fa-search"></i> </div>
-                                        <img src="img/portfolio/03.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                        <div class="panel-group" id="accordion-booking">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-booking" href="#collapseBookingFour">
+                                            I have a question or need help to perform an anlaysis. Can I contact you to get any help?        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseBookingFour" class="panel-collapse collapse ">
+                                    <div class="panel-body">
+                                        Yes, we are reachable by email. For general questions about OMA, our preferred way of answering questions is through BioStar. Please consider asking your question there, including the tag OMA. We monitor BioStar for such questions and will answer them directly on that platform.       </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 web">
-                            <div class="portfolio-item">
-                                <div class="hover-bg"> <a href="img/portfolio/04.jpg" title="Project description" rel="prettyPhoto">
-                                        <div class="hover-text">
-                                            <h4>Project Title</h4>
-                                            <small>Web Design</small>
-                                            <div class="clearfix"></div>
-                                            <i class="fa fa-search"></i> </div>
-                                        <img src="img/portfolio/04.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-booking" href="#collapseBookingFive">
+                                            Why is my favorite genome not present in OMA?        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseBookingFive" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        We strive to include as many complete genomes as possible, provided they are released publicly and meet reasonable quality standards. We are open for suggestions and are willing to adapt our priority queue based on user requests. If you want to analyze your "own" genomes, you can use the <a href="/standalone">OMA standalone pipeline</a> to do so and even make use of already analyzed genomes using the export function. OMA standalone is licenced under the Mozilla Public License Version 2.0. In a nutshell, OMA standalone is open source and free for commercial and non-commercial use.       </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 app">
-                            <div class="portfolio-item">
-                                <div class="hover-bg"> <a href="img/portfolio/05.jpg" title="Project description" rel="prettyPhoto">
-                                        <div class="hover-text">
-                                            <h4>Project Title</h4>
-                                            <small>App Development</small>
-                                            <div class="clearfix"></div>
-                                            <i class="fa fa-search"></i> </div>
-                                        <img src="img/portfolio/05.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-booking" href="#collapseBookingSix">
+                                            What is the difference between OMA Groups and Hierarchical Groups?        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseBookingSix" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        OMA Groups are sets of genes which are all orthologous to each other according to the definition of Fitch (1970). In presence of a duplication in certain gene familly, this grouping strategy will pick only one of the two lineages resulting from the duplication event. The hierarchical orthologous groups (HOGs) are defined as sets of genes that have descended from a single common ancestor within a taxonomic range of interest, i.e. they correspond to the member of a clade in a gene tree rooted at the speciation node of interest.
+                                        Which type of groups you should choose depends highly on the type of your analysis.      </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 branding">
-                            <div class="portfolio-item">
-                                <div class="hover-bg"> <a href="img/portfolio/06.jpg" title="Project description" rel="prettyPhoto">
-                                        <div class="hover-text">
-                                            <h4>Project Title</h4>
-                                            <small>Branding</small>
-                                            <div class="clearfix"></div>
-                                            <i class="fa fa-search"></i> </div>
-                                        <img src="img/portfolio/06.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-booking" href="#collapseBookingSeven">
+                                            Why are OMA Groups often relatively small? Covering so many genomes, I expected them to be much bigger.         </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseBookingSeven" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        For the OMA Groups, we apply a very stringent grouping strategy. All the members of a group need to be bona fide orthologs to each other, i.e. the form a clique in graph-theoretic terms. This grouping strategy is mainly intended for applications which require orthologs of high confidence, e.g. for reconstructing species trees. A gene tree built from the members of an OMA Group should - in absence of LGT are incomplete lineage sorting - be congruent with the underlying species tree. If you are interested in larger groups, consider using the OMA HOGs. These hierarchical orthologous groups are defined as set of genes that all started diverging from a single ancestral gene at a given time point of reference.      </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 branding app">
-                            <div class="portfolio-item">
-                                <div class="hover-bg"> <a href="img/portfolio/07.jpg" title="Project description" rel="prettyPhoto">
-                                        <div class="hover-text">
-                                            <h4>Project Title</h4>
-                                            <small>App Development, Branding</small>
-                                            <div class="clearfix"></div>
-                                            <i class="fa fa-search"></i> </div>
-                                        <img src="img/portfolio/07.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-booking" href="#collapseBookingEight">
+                                            Under what licence is OMA distributed </a>      </h4>
+                                </div>
+                                <div id="collapseBookingEight" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        The OMA Browser is available under the Creative Commons Attribution-Share Alike 2.5 License, and the OMA standalone package under the MPL 2.0 (open source) licence.</div>    </div>
                             </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 web">
-                            <div class="portfolio-item">
-                                <div class="hover-bg"> <a href="img/portfolio/08.jpg" title="Project description" rel="prettyPhoto">
-                                        <div class="hover-text">
-                                            <h4>Project Title</h4>
-                                            <small>Web Design</small>
-                                            <div class="clearfix"></div>
-                                            <i class="fa fa-search"></i> </div>
-                                        <img src="img/portfolio/08.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
