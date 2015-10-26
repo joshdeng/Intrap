@@ -2,7 +2,7 @@ body, html {
     font-family: 'Open Sans', sans-serif;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
-    color: #fff;
+    color: #eeeeee;
     width: 100% !important;
     height: 100% !important;
 }
@@ -79,6 +79,7 @@ ul, ol {
     webkit-padding: 0;
     moz-padding: 0;
 }
+
 /* Navigation */
 .navbar-custom {
     margin-bottom: 0;
@@ -197,7 +198,13 @@ ul, ol {
 .intro .intro-body .intro-text {
     font-size: 18px;
 }
-
+.intro canvas#spiders {
+    position: absolute;
+    display: table-cell;
+    text-align: center;
+    width:100%;
+    height:auto;
+}
 @media(min-width:768px) {
     .intro {
         height: 100%;
@@ -342,117 +349,35 @@ ul, ol {
     margin-top: 20px;
     margin-bottom: 30px;
 }
-/* Achivements Section */
-#achivements {
-    padding: 80px 0;
-    color: #aaa;
-    background: #000; /* Old browsers */
-    background: -moz-linear-gradient(top, #000 0%, #000 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000), color-stop(100%, #31353a)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #000 0%, #000 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #000 0%, #000 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #000 0%, #000 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #000 0%, #000 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#000', GradientType=0 ); /* IE6-9 */
-}
-.achivement-box {
-    text-align: center;
-    margin: 20px 0;
-}
-.achivement-box i.fa {
-    font-size: 60px;
-    font-weight: 400;
-    color: #17A3A8;
-    margin-bottom: 20px;
-}
-.achivement-box h4 {
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.achivement-box span.count {
-    font-size: 36px;
-    font-weight: 700;
-    color: #fff;
-    display: block;
-}
+
 /* Rooms Section */
 #rooms {
     padding: 80px 0;
-    color: #aaa;
-    background: #000; /* Old browsers */
-    background: -moz-linear-gradient(top, #000 0%, #000 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000), color-stop(100%, #000)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #000 0%, #000 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #000 0%, #000 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #000 0%, #000 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #000 0%, #000 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#000', GradientType=0 ); /* IE6-9 */
+    color: #fff;
+    background: #222222;
 }
-img.img-circle.team-img {
-    width: 120px;
-    height: 120px;
-    border: 4px solid transparent;
-    transition: all 0.5s;
+
+#rooms img:hover {
+    /*    border: 4px solid #17A3A8;
+        font-size: medium;*/
 }
-#rooms .thumbnail:hover>img.img-circle.team-img {
-    border: 4px solid #17A3A8;
-    font-size: medium;
-}
-#rooms .thumbnail {
-    background: transparent;
-    border: 0;
-}
-#rooms .thumbnail .caption {
-    padding: 9px;
-    color: #5a5a5a;
-}
-/*#rooms .section-title.center hr {
-    background: #000;
-}
-#rooms H2 {
-    color: #ddd;
-}
-#rooms H4 {
-    color: #17A3A8;
-    transition: all 0.5s;
-}
-.space {
-    margin-top: 40px;
-}
-#rooms i.fa {
-    font-size: 50px;
-    width: 120px;
-    height: 120px;
-    padding: 34px 0;
-    margin-bottom: 10px;
-    border-radius: 50%;
-    color: #aaa;
-    background: #000;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -ms-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
-}
-#rooms .service:hover > i.fa {
-    color: #17A3A8;
-    -webkit-transform: scale(1.3);
-    -moz-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    -o-transform: scale(1.3);
-    transform: scale(1.3);
-}*/
+
 /* FAQ Section 
 ==============================*/
 #faq {
     padding: 80px 0;
-    color: #fff;
+    color: #eeeeee;
     background: #000; /* Old browsers */
 }
-#faq>.panel-body{
-    color: #fff;
-    background: #000;
+#faq .panel-heading{
+    color: #222222;
+    background:  #eeeeee;
+}
+#faq .panel-title{
+    font-weight: bold;
+}
+#faq .panel-body{
+    color: #333333;
 }
 /* Location Section */
 #location {
@@ -466,67 +391,11 @@ img.img-circle.team-img {
     background: #222222;
 }
 
-#contact form {
-    padding: 30px 0;
-}
 #contact .fa {
     color: #17A3A8;
     margin-bottom: 10px;
 }
-#contact .text-danger {
-    color: #ff3333;
-    text-align: left;
-}
-label {
-    font-size: 12px;
-    font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
-    float: left;
-}
-#contact .form-control {
-    display: block;
-    width: 100%;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-}
-#contact .form-control:focus {
-    border-color: inherit;
-    outline: 0;
-    -webkit-box-shadow: transparent;
-    box-shadow: transparent;
-}
-#contact .btn {
-    background-color: #aaa;
-    border: 0;
-    border-radius: 4px;
-    padding: 10px 20px;
-    color: #ffffff;
-    margin-top: 15px;
-}
-#contact .btn:hover, #contact .btn:focus {
-    background: #17A3A8;
-}
-.btn:active, .btn.active {
-    background-image: none;
-    outline: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
-    outline: none;
-    outline-offset: none;
-}
+
 /* Career Section */
 #career {
     //background: url(../img/testimonial-bg.jpg);
