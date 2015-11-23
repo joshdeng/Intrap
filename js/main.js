@@ -113,7 +113,6 @@ function main() {
         function bootstrap_equalizer() {
             $(".equalizer").each(function () {
                 var heights = $(this).find(".watch").map(function () {
-                    console.log(heights);
                     return $(this).height();
                 }).get(),
                         maxHeight = Math.max.apply(null, heights);

@@ -169,8 +169,8 @@ ul, ol {
 .intro {
     display: table;
     width: 100%;
-    height: auto;
-    padding: 100px 0;
+    height: 100%;
+    padding: 0;
     text-align: center;
     color: #fff;
     background: url(../img/intro-bg.jpg) no-repeat bottom center;
@@ -182,55 +182,35 @@ ul, ol {
 }
 .intro .intro-body {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: bottom;
 }
-.intro .intro-body .container .row{
-    padding-top: 75px;
-}
-.intro #main-logo{
-    width: 320px;
-}
-.intro .intro-body .brand-heading {
-    color: #17A3A8;
-    text-transform: uppercase;
-    letter-spacing: -2px;
-}
-.intro .intro-body .intro-text {
-    font-size: 18px;
-}
-.intro canvas#spiders {
+/*.intro canvas#spiders {
     position: absolute;
     display: table-cell;
     text-align: center;
     width:100%;
     height:auto;
+}*/
+/* dimensions & placement of ParticleSlider */
+#particle-slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+/* hide control & slide sources */
+#particle-slider div {
+    display: none;
 }
 @media(min-width:768px) {
     .intro {
         height: 100%;
         padding: 0;
     }
-    .intro .intro-body H1 {
-        font-size: 70px;
-        font-weight: 700;
-        letter-spacing: -2px;
-    }
-    .intro .intro-body .intro-text {
-        font-size: 40px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        margin-bottom: 50px;
-        color:#17A3A8;
-    }
 }
 .btn-circle {
     width: 70px;
     height: 70px;
-    margin-top: 45px;
-    padding: 7px 16px;
-    border: 2px solid rgba(255,255,255,.2);
-    border-radius: 100%!important;
+    margin-top: 20px;
     font-size: 40px;
     color: #17A3A8;
     background: 0 0;
@@ -242,7 +222,6 @@ ul, ol {
 .btn-circle:hover, .btn-circle:focus {
     outline: 0;
     color: #17A3A8;
-    background: rgba(255,255,255,.1);
 }
 .btn-circle i.animated {
     -webkit-transition-property: -webkit-transform;
