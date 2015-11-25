@@ -44,6 +44,7 @@ a.active {
     outline: 0;
 }
 
+
 a {
     color: #fff;
 }
@@ -91,10 +92,12 @@ ul, ol {
 }
 
 .navbar-custom .navbar-brand img {
-    margin-top:-10px;
+    margin-top:-16px;
     height: 40px;
 }
-
+.navbar-custom li a {
+    padding: 10px 7px;
+}
 .navbar-custom .navbar-brand:focus {
     outline: 0;
 }
@@ -160,7 +163,8 @@ ul, ol {
     }
     .navbar-custom.top-nav-collapse {
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        padding: 15px 0;
+        padding-top: 15px;
+        padding-bottom: 10px;
         background: #000;
     }
 }
@@ -173,7 +177,8 @@ ul, ol {
     padding: 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center;
+    background: #000;
+    /*    background: url(../img/intro-bg.jpg) no-repeat bottom center;*/
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -182,25 +187,31 @@ ul, ol {
 }
 .intro .intro-body {
     display: table-cell;
-    vertical-align: bottom;
+    vertical-align: middle;
 }
-/*.intro canvas#spiders {
+.intro .intro-body .container .row{
+    padding-top: 75px;
+}
+.intro #main-logo{
+    width: 320px;
+}
+.intro canvas {
     position: absolute;
     display: table-cell;
     text-align: center;
     width:100%;
     height:auto;
-}*/
+}
 /* dimensions & placement of ParticleSlider */
-#particle-slider {
+/*#particle-slider {
     width: 100%;
     height: 100%;
     position: absolute;
-}
+}*/
 /* hide control & slide sources */
-#particle-slider div {
+/*#particle-slider div {
     display: none;
-}
+}*/
 @media(min-width:768px) {
     .intro {
         height: 100%;

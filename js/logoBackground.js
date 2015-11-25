@@ -96,7 +96,7 @@ function randInt( min, max ) {
 };
 
 function init() {
-	canvas = document.getElementById( 'canvas' );
+	canvas = document.getElementById( 'intro-background' );
 	ctx = canvas.getContext( '2d' );
 	size = 30;
 	lines = [];
