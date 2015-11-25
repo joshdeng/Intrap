@@ -92,7 +92,7 @@ ul, ol {
 }
 
 .navbar-custom .navbar-brand img {
-    margin-top:-16px;
+    margin-top: -6px;
     height: 40px;
 }
 .navbar-custom li a {
@@ -122,7 +122,7 @@ ul, ol {
     color: #17A3A8;
     background-color: transparent;
 }
-.navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
+navbar-custom .nav li a:active {
     outline: 0;
     background-color: transparent;
     color: #fff;
@@ -164,8 +164,11 @@ ul, ol {
     .navbar-custom.top-nav-collapse {
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         padding-top: 15px;
-        padding-bottom: 10px;
+        padding-bottom: 8px;
         background: #000;
+    }
+    .navbar-custom .navbar-brand img {
+        margin-top: -16px;
     }
 }
 
@@ -190,28 +193,19 @@ ul, ol {
     vertical-align: middle;
 }
 .intro .intro-body .container .row{
-    padding-top: 75px;
+    padding-top: 90px;
 }
 .intro #main-logo{
     width: 320px;
 }
-.intro canvas {
+.intro #intro-background {
     position: absolute;
     display: table-cell;
     text-align: center;
     width:100%;
-    height:auto;
+    height:100%;
 }
-/* dimensions & placement of ParticleSlider */
-/*#particle-slider {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}*/
-/* hide control & slide sources */
-/*#particle-slider div {
-    display: none;
-}*/
+
 @media(min-width:768px) {
     .intro {
         height: 100%;
@@ -346,10 +340,15 @@ ul, ol {
     color: #fff;
     background: #222222;
 }
+#rooms p{
+    text-align: left;
+}
 
-#rooms img:hover {
-    /*    border: 4px solid #17A3A8;
-        font-size: medium;*/
+#rooms #room2,#room3{
+    padding-top: 20px;
+}
+#rooms img {
+    padding-top: 20px;
 }
 
 /* FAQ Section 
