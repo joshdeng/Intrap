@@ -199,7 +199,6 @@ navbar-custom .nav li a:active {
     width: 320px;
 }
 .intro #intro-background {
-    top:0;
     position: absolute;
     display: table-cell;
     text-align: center;
