@@ -199,6 +199,7 @@ navbar-custom .nav li a:active {
     width: 320px;
 }
 .intro #intro-background {
+    top:0;
     position: absolute;
     display: table-cell;
     text-align: center;
@@ -321,17 +322,15 @@ navbar-custom .nav li a:active {
     display: block;
     margin-right: 15px;
     color: #fff;
-    font-size: 30px;
+    font-size: 25px;
     text-shadow: 0 0 1px #666;
 }
 #about img {
-    margin-top: -30px;
     margin-left: 10px;
 }
 #about p {
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    text-indent:2em;
+    font-size: 18px;
 }
 
 /* Rooms Section */
