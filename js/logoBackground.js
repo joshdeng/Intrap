@@ -1,5 +1,5 @@
 /*
- * http://codepen.io/jackrugile/pen/bdwvMo 
+ * FROM http://codepen.io/jackrugile/pen/bdwvMo 
  * 
  * */
 var canvas,
@@ -19,7 +19,14 @@ function line() {
     this.target = {x: width / 2, y: height / 2};
     this.dist = 0;
     this.angle = 0;
-    this.hue = tick / 5;
+    this.hue = tick / 5 % 360;
+    console.log(this.hue);
+    if (this.hue <= 80 && this.hue + 30 >= 80) {
+        this.hue = randInt(0, 50);
+    } else if (this.hue >= 80 && this.hue <= 220) {
+        this.hue = randInt(220, 360);
+    }
+    console.log(this.hue);
     this.life = 1;
     this.updateAngle();
     this.updateDist();
