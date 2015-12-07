@@ -13,4 +13,3 @@
         ptlSize: isMobile || isSmall ? 1 : 3,
     });
 //Remove the next line to enable particle noise
-    ps.restless = false;
