@@ -29,8 +29,9 @@
         <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
         <link href='http://fonts.useso.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
         <link href='http://fonts.useso.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-        <script type="text/javascript" src="js/moderniz.js"></script>
-
+        <script type="text/javascript" src="js/modernizr.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+        <script type="text/javascript" src="js/googleMap.js"></script>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -489,7 +490,7 @@
                             Edmonton, AB, T6E 1Z9</p>
                     </div>
                     <div class="col-md-8 col-md-offset-2">
-                        <img src="img/map.png" alt="" class="img-responsive center-block">
+                        <div id="googleMap" class ="center-block" style="width:380px;height:380px;"></div>
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -593,7 +594,6 @@
         <script type="text/javascript" src="js/jquery.counterup.js"></script> 
         <script type="text/javascript" src="js/waypoints.js"></script>
         <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
-        <script type="text/javascript" src="js/contact_me.js"></script>
         <script src="js/owl.carousel.js"></script>
         <!--        <script type="text/javascript" src="js/header-points.js"></script>-->
         <!--        <script type="text/javascript" src="js/logoController.js"></script>-->
