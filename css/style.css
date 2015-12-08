@@ -388,7 +388,22 @@ navbar-custom .nav li a:active {
     background: #000;
     //background:  #222222; /* Old browsers */
 }
-
+.map-outer{
+    position: relative;
+    overflow: hidden;
+    width: 60%;
+    max-width: 400px;
+}
+.map-container{
+    margin-top:100%;
+}
+.map-inner {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 /* Contact Section */
 #contact {
     padding: 80px 0;
