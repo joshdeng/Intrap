@@ -12,7 +12,14 @@ function main() {
                 $(".navbar-fixed-top").removeClass("top-nav-collapse");
             }
         });
-
+        $(window).on('resize', (function () {
+            if ($(window).width() > 991) {
+                $("#location-contact-container").addClass("equalizer");
+                bootstrap_equalizer();
+            } else {
+                $("#location-contact-container").removeClass("equalizer");
+            }
+        }));
         // Testimonial Slider
         $('a.page-scroll').click(function () {
             if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
@@ -43,12 +50,12 @@ function main() {
             target: '.navbar-fixed-top',
             offset: 80
         });
-        
+
         // Closes the Responsive Menu on Menu Item Click
-        $('.navbar-collapse ul li a').click(function() {
+        $('.navbar-collapse ul li a').click(function () {
             $('.navbar-toggle:visible').click();
         });
-        
+
         $(document).ready(function () {
             $("#testimonial").owlCarousel({
                 navigation: false, // Show next and prev buttons
@@ -94,14 +101,17 @@ function main() {
 // ****************************************************************
 
         $(document).ready(function ($) {
-           
+
             if ($("span.count").length > 0) {
                 $('span.count').counterUp({
                     delay: 10, // the delay time in ms
                     time: 1000 // the speed time in ms
                 });
             }
-             bootstrap_equalizer();
+            if ($(window).width() > 991) {
+                $("#location-contact-container").addClass("equalizer");
+            }
+            bootstrap_equalizer();
         });
 
         /*====================================

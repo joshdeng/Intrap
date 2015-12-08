@@ -199,17 +199,17 @@ navbar-custom .nav li a:active {
     display: table-cell;
     vertical-align: middle;
 }
-.intro .intro-body .intro-logo-container{
+.intro .intro-body .container .intro-logo-container{
     position: relative;
     height:100%;
     width:100%;
     flex-direction: row;
     display: flex;
-    align-items: center;     /* Align the flex-items vertically */
+    align-items: center;/* Align the flex-items vertically */
     justify-content: center;
 }
 .intro #main-logo{
-
+    width: 60%;
 }
 .intro #intro-background {
     top: 0;
@@ -391,7 +391,7 @@ navbar-custom .nav li a:active {
 .map-outer{
     position: relative;
     overflow: hidden;
-    width: 60%;
+    width: 65%;
     max-width: 400px;
 }
 .map-container{
