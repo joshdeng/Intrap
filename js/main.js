@@ -1,4 +1,3 @@
-
 function main() {
 
     (function () {
@@ -97,8 +96,8 @@ function main() {
         });
 
         // ****************************************************************
-// counterUp
-// ****************************************************************
+        // counterUp
+        // ****************************************************************
 
         $(document).ready(function ($) {
 
@@ -120,12 +119,13 @@ function main() {
         $("a[rel^='prettyPhoto']").prettyPhoto({
             social_tools: false
         });
+
         function bootstrap_equalizer() {
             $(".equalizer").each(function () {
                 var heights = $(this).find(".watch").map(function () {
-                    return $(this).height();
-                }).get(),
-                        maxHeight = Math.max.apply(null, heights);
+                        return $(this).height();
+                    }).get(),
+                    maxHeight = Math.max.apply(null, heights);
 
                 $(".watch").height(maxHeight);
             });
