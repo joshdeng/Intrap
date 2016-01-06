@@ -7,7 +7,8 @@ body, html {
     height: 100% !important;
 }
 body{
-    background: url(../img/intro-bg.jpg) bottom center;
+    background: url(../img/intro-bg.jpg) center;
+    background-color: #000;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -150,35 +151,7 @@ navbar-custom .nav li a:active {
 .navbar-custom .nav li>.collapse-nav{
     display: none;
 }
-@media(max-width:768px) {
-    .navbar-custom .nav li>.full-nav{
-        display: none;
-    }
-    .navbar-custom .nav li>.collapse-nav{
-        display: block;
-    }
-}
-@media(min-width:768px) {
-    .navbar-custom {
-        left: -5px;
-        padding: 20px 0;
-        border-bottom: 0;
-        letter-spacing: 0px;
-        background: 0 0;
-        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
-        transition: background .5s ease-in-out, padding .5s ease-in-out;
-    }
-    .navbar-custom.top-nav-collapse {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        padding-top: 15px;
-        padding-bottom: 8px;
-        background: #000;
-    }
-    .navbar-custom .navbar-brand img {
-        margin-top: -16px;
-    }
-}
+
 
 /* Home Style */
 .intro {
@@ -220,12 +193,6 @@ navbar-custom .nav li a:active {
     height:100%;
 }
 
-@media(min-width:768px) {
-    .intro {
-        height: 100%;
-        padding: 0;
-    }
-}
 .btn-circle {
     width: 70px;
     height: 70px;
@@ -385,7 +352,7 @@ navbar-custom .nav li a:active {
 /* Location Section */
 #location {
     padding: 80px 0;
-    background: #000;
+    //background: #000;
     //background:  #222222; /* Old browsers */
 }
 .map-outer{
@@ -407,7 +374,7 @@ navbar-custom .nav li a:active {
 /* Contact Section */
 #contact {
     padding: 80px 0;
-    background: #000;
+    //background: #000;
     // background: #222222;
 }
 
@@ -489,4 +456,38 @@ nav#footer p {
 }
 #footer i.fa:hover {
     color: #17A3A8;
+}
+@media(max-width:768px) {
+    .navbar-custom .nav li>.full-nav{
+        display: none;
+    }
+    .navbar-custom .nav li>.collapse-nav{
+        display: block;
+    }
+}
+@media(min-width:768px) {
+    .navbar-custom {
+        left: -5px;
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 0px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
+    }
+    .navbar-custom.top-nav-collapse {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        padding-top: 15px;
+        padding-bottom: 8px;
+        background: #000;
+    }
+    .navbar-custom .navbar-brand img {
+        margin-top: -16px;
+    }
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
 }
