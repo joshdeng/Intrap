@@ -1,5 +1,5 @@
 body, html {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     color: #eeeeee;
@@ -37,13 +37,13 @@ h5 {
     line-height: 20px;
 }
 p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Orbitron', sans-serif;
 }
 p.intro {
     font-size: 16px;
     margin: 12px 0 0;
     line-height: 24px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Orbitron', sans-serif;
 }
 a,
 a:hover,
@@ -151,7 +151,9 @@ navbar-custom .nav li a:active {
 .navbar-custom .nav li>.collapse-nav{
     display: none;
 }
-
+.navbar-logo{
+    padding: 6px 0 6px 0;
+}
 
 /* Home Style */
 .intro {
@@ -160,7 +162,7 @@ navbar-custom .nav li a:active {
     height: 100%;
     padding: 0;
     text-align: center;
-    background: #000;
+    background-color: #000;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -265,7 +267,7 @@ navbar-custom .nav li a:active {
     width: 70px;
     text-align: center;
     position: relative;
-    background: #17A3A8;
+    background-color: #17A3A8;
     margin: 0 auto;
     margin-bottom: 30px;
     border: 0;
@@ -286,11 +288,9 @@ navbar-custom .nav li a:active {
 #about .about-text {
     margin-left: 10px;
 }
-.answer{
-    font-family:Lucida Console;
-}
+
 #about .section-title.center hr {
-    background: #17A3A8;
+    background-color: #17A3A8;
 }
 #about .padding-left {
     padding-left: 0px;
@@ -318,14 +318,22 @@ navbar-custom .nav li a:active {
 #rooms {
     padding: 80px 0;
     color: #fff;
-    background: #000;
+    background-color: #000;
     //background: #222222;
 }
 #rooms p{
     text-align: left;
+    padding:0;
+    margin:0;
 }
-
-#rooms #room2,#room3{
+.star{
+    padding:0;
+    margin:0;
+    font-size:35px;
+    display:block;
+    color: #17A3A8;
+}
+#rooms,#room2,#room3{
     padding-top: 20px;
 }
 #rooms img {
@@ -339,20 +347,24 @@ navbar-custom .nav li a:active {
     color: #eeeeee;
     //  background: #000; /* Old browsers */
 }
+.answer{
+    font-family:'Orbitron', sans-serif;
+}
 #faq .panel-heading{
     color: #222222;
-    background:  #eeeeee;
+    background-color:  #ddd;
 }
 #faq .panel-title{
     font-weight: bold;
 }
 #faq .panel-body{
-    color: #333333;
+    color: #222222;
+    background-color:#eee;
 }
 /* Location Section */
 #location {
     padding: 80px 0;
-    //background: #000;
+    background-color: #000;
     //background:  #222222; /* Old browsers */
 }
 .map-outer{
@@ -374,7 +386,7 @@ navbar-custom .nav li a:active {
 /* Contact Section */
 #contact {
     padding: 80px 0;
-    //background: #000;
+    background-color: transparent;
     // background: #222222;
 }
 
@@ -390,7 +402,7 @@ navbar-custom .nav li a:active {
 /* Career Section */
 #career {
     //background: url(../img/testimonial-bg.jpg);
-    //  background:#000;
+    //  background-color:#000;
     color: #fff;
     padding: 80px 0;
 }
@@ -418,20 +430,20 @@ navbar-custom .nav li a:active {
     -webkit-border-radius: 0;
     -moz-border-radius: 20px;
     border-radius: 50%;
-    background: #FFFFFF;
+    background-color: #fff;
     transition: all 0.5s;
 }
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
     filter: Alpha(Opacity=100);
     opacity: 1;
-    background: #17A3A8;
+    background-color: #17A3A8;
 }
 .owl-theme .owl-controls .owl-page.active span {
-    background: #17A3A8;
+    background-color: #17A3A8;
 }
 /* Footer */
 nav#footer {
-    background:#000;
+    background-color:#000;
     color: #ddd;
     padding: 30px 0 25px 0;
 }
@@ -480,10 +492,13 @@ nav#footer p {
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         padding-top: 15px;
         padding-bottom: 8px;
-        background: #000;
+        background-color: #000;
     }
     .navbar-custom .navbar-brand img {
         margin-top: -16px;
+    }
+    #contact{
+        background-color: #000;
     }
     .intro {
         height: 100%;
