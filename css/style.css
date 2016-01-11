@@ -1,5 +1,6 @@
 body, html {
     font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     color: #eeeeee;
@@ -37,13 +38,13 @@ h5 {
     line-height: 20px;
 }
 p {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Play', sans-serif;
+    font-size: 18px;
+
 }
 p.intro {
-    font-size: 16px;
     margin: 12px 0 0;
     line-height: 24px;
-    font-family: 'Orbitron', sans-serif;
 }
 a,
 a:hover,
@@ -311,7 +312,7 @@ navbar-custom .nav li a:active {
 
 #about p {
     text-indent:2em;
-    font-size: 18px;
+
 }
 
 /* Rooms Section */
@@ -325,6 +326,9 @@ navbar-custom .nav li a:active {
     text-align: left;
     padding:0;
     margin:0;
+}
+.room-coming-img{
+    
 }
 .star{
     padding:0;
@@ -348,7 +352,7 @@ navbar-custom .nav li a:active {
     //  background: #000; /* Old browsers */
 }
 .answer{
-    font-family:'Orbitron', sans-serif;
+    // font-family:'Orbitron', sans-serif;
 }
 #faq .panel-heading{
     color: #222222;
@@ -396,7 +400,6 @@ navbar-custom .nav li a:active {
 }
 
 .hours{
-    font-family:Arial Black;
     text-align:center
 }
 /* Career Section */
@@ -455,7 +458,7 @@ ul.footer-social li {
     margin-right: 10px;
 }
 nav#footer p {
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 10px;
 }
 #footer i.fa {
