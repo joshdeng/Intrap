@@ -5,16 +5,43 @@
  */
 var myCenter = new google.maps.LatLng(53.5177506, -113.4963977);
 
-function initialize()
+function initMap()
 {
+	var styles = [
+		{
+		  stylers: [
+			{ hue: "#00ffe6" },
+			{ saturation: -20 }
+		  ]
+		},{
+		  featureType: "road",
+		  elementType: "geometry",
+		  stylers: [
+			{ lightness: 100 },
+			{ visibility: "simplified" }
+		  ]
+		},{
+		  featureType: "road",
+		  elementType: "labels",
+		  stylers: [
+			{ visibility: "off" }
+		  ]
+		}
+	  ];
+	var styledMap = new google.maps.StyledMapType(styles, {name: "Styled Map"});
+	
     var mapProp = {
         center: myCenter,
         zoom: 15,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+        mapTypeControlOptions: {
+		   mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+		}
     };
 
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-
+	map.mapTypes.set('map_style', styledMap);
+	map.setMapTypeId('map_style');
+	
     var marker = new google.maps.Marker({
         position: myCenter,
     });
@@ -32,4 +59,4 @@ function initialize()
     });
 }
 
-google.maps.event.addDomListener(window, 'load', initialize);
+google.maps.event.addDomListener(window, 'load', initMap);
