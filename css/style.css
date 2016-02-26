@@ -34,7 +34,6 @@ h1 strong {
 }
 h2 {
     text-transform: uppercase;
-    line-height: 20px;
     margin: 0;
 }
 h3 {
@@ -104,6 +103,9 @@ ul, ol {
     transition-delay: .1s;
     -webkit-animation-delay: .1s;
     -webkit-transition-delay: .1s;
+}
+.header-h1 {
+    display: none;
 }
 /* Navigation */
 .navbar-custom {
@@ -305,9 +307,6 @@ navbar-custom .nav li a:active {
     margin-left: 10px;
 }
 
-#about .section-title.center hr {
-    background-color: #17A3A8;
-}
 #about .padding-left {
     padding-left: 0px;
 }
@@ -342,9 +341,7 @@ navbar-custom .nav li a:active {
     padding:0;
     margin:0;
 }
-.room-coming-img{
-    
-}
+
 .star{
     padding:0;
     margin:0;
@@ -352,7 +349,10 @@ navbar-custom .nav li a:active {
     display:block;
     color: #17A3A8;
 }
-#room,#room2,#room3{
+#room1,#room2 {
+    padding-bottom: 50px;
+}
+#room2,#room3 {
     padding-top: 50px;
 }
 #rooms img {
