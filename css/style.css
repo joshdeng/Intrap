@@ -99,7 +99,12 @@ ul, ol {
     webkit-padding: 0;
     moz-padding: 0;
 }
-
+.animated {
+    animation-delay: .1s;
+    transition-delay: .1s;
+    -webkit-animation-delay: .1s;
+    -webkit-transition-delay: .1s;
+}
 /* Navigation */
 .navbar-custom {
     margin-bottom: 0;
@@ -194,6 +199,7 @@ navbar-custom .nav li a:active {
     justify-content: center;
 }
 .intro #main-logo{
+    
     width: 60%;
 }
 .intro #intro-background {
@@ -346,11 +352,11 @@ navbar-custom .nav li a:active {
     display:block;
     color: #17A3A8;
 }
-#rooms,#room2,#room3{
-    padding-top: 20px;
+#room,#room2,#room3{
+    padding-top: 50px;
 }
 #rooms img {
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 /* FAQ Section 
