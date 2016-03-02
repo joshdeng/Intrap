@@ -2,31 +2,7 @@ function main() {
 
     (function () {
         'use strict';
-        var win_height_padded = $(window).height() * 1.1,
-            isTouch           = Modernizr.touch;
-        
-        if (isTouch) { $('.revealOnScroll').addClass('animated'); }
-        
-        // jQuery to collapse the navbar on scroll
-        $(window).on('scroll', revealOnScroll);
-        function revealOnScroll() {
-            var scrolled = $(window).scrollTop();
-            $(".revealOnScroll:not(.animated)").each(function () {
-              var $this     = $(this),
-                  offsetTop = $this.offset().top;
 
-              if (scrolled + win_height_padded > offsetTop) {
-                if ($this.data('timeout')) {
-                  $(window).setTimeout(function(){
-                    $this.addClass('animated ' + $this.data('animation'));
-                  }, parseInt($this.data('timeout'),10));
-                } else {
-                  $this.addClass('animated ' + $this.data('animation'));
-                }
-              }
-             });
-        }
-        
         $(window).scroll(function () {
             if ($(".navbar").offset().top > 50) {
                 $(".navbar-fixed-top").addClass("top-nav-collapse");
@@ -154,7 +130,13 @@ function main() {
             });
         }
     }());
-
-
+    var reveal = {
+      delay    : 200,
+      distance : '20px',
+      easing   : 'ease-in-out',
+      scale    : .8
+    };
+    window.sr = ScrollReveal();
+    sr.reveal('.revealOnScroll',reveal);
 }
 main();

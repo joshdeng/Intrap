@@ -50,6 +50,9 @@ p {
     font-size: 18px;
 
 }
+hr {
+    border-top: 1px solid #17A3A8;
+}
 p.intro {
     margin: 12px 0 0;
     line-height: 24px;
